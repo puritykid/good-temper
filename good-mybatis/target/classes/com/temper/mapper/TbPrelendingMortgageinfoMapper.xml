@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.temper.mapper.TbPrelendingMortgageinfoMapper">
+  <resultMap id="BaseResultMap" type="com.temper.model.TbPrelendingMortgageinfo">
+    <id column="Id" jdbcType="CHAR" property="id" />
+    <result column="ApplicationId" jdbcType="CHAR" property="applicationid" />
+    <result column="MortgageDate" jdbcType="DATE" property="mortgagedate" />
+    <result column="TransferDate" jdbcType="DATE" property="transferdate" />
+    <result column="CarNumber" jdbcType="VARCHAR" property="carnumber" />
+    <result column="HisLicenseNumber" jdbcType="VARCHAR" property="hislicensenumber" />
+    <result column="CollateralName" jdbcType="VARCHAR" property="collateralname" />
+    <result column="OwnerName" jdbcType="VARCHAR" property="ownername" />
+    <result column="Relationship" jdbcType="SMALLINT" property="relationship" />
+    <result column="MajorClass" jdbcType="VARCHAR" property="majorclass" />
+    <result column="MajorName" jdbcType="VARCHAR" property="majorname" />
+    <result column="MediumClass" jdbcType="VARCHAR" property="mediumclass" />
+    <result column="MediumName" jdbcType="VARCHAR" property="mediumname" />
+    <result column="SmallClass" jdbcType="VARCHAR" property="smallclass" />
+    <result column="SmallName" jdbcType="VARCHAR" property="smallname" />
+    <result column="CollateralPrice" jdbcType="DECIMAL" property="collateralprice" />
+    <result column="CollateralAddress" jdbcType="VARCHAR" property="collateraladdress" />
+    <result column="RegistrationDate" jdbcType="DATE" property="registrationdate" />
+    <result column="HandleDate" jdbcType="DATE" property="handledate" />
+    <result column="MaxMortgageRate" jdbcType="DECIMAL" property="maxmortgagerate" />
+    <result column="MortgageStartDate" jdbcType="DATE" property="mortgagestartdate" />
+    <result column="MortgageEndDate" jdbcType="DATE" property="mortgageenddate" />
+    <result column="MortgageContractNumber" jdbcType="VARCHAR" property="mortgagecontractnumber" />
+    <result column="CreatedAt" jdbcType="TIMESTAMP" property="createdat" />
+    <result column="CreatedById" jdbcType="CHAR" property="createdbyid" />
+    <result column="UpdatedAt" jdbcType="TIMESTAMP" property="updatedat" />
+    <result column="UpdatedById" jdbcType="CHAR" property="updatedbyid" />
+    <result column="Deleted" jdbcType="BIT" property="deleted" />
+    <result column="DeletedAt" jdbcType="TIMESTAMP" property="deletedat" />
+    <result column="DeletedById" jdbcType="CHAR" property="deletedbyid" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.temper.model.TbPrelendingMortgageinfo">
+    <result column="JsonString" jdbcType="LONGVARCHAR" property="jsonstring" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    Id, ApplicationId, MortgageDate, TransferDate, CarNumber, HisLicenseNumber, CollateralName, 
+    OwnerName, Relationship, MajorClass, MajorName, MediumClass, MediumName, SmallClass, 
+    SmallName, CollateralPrice, CollateralAddress, RegistrationDate, HandleDate, MaxMortgageRate, 
+    MortgageStartDate, MortgageEndDate, MortgageContractNumber, CreatedAt, CreatedById, 
+    UpdatedAt, UpdatedById, Deleted, DeletedAt, DeletedById
+  </sql>
+  <sql id="Blob_Column_List">
+    JsonString
+  </sql>
+  <select id="selectByExampleWithBLOBs" parameterType="com.temper.model.TbPrelendingMortgageinfoExample" resultMap="ResultMapWithBLOBs">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_prelending_mortgageinfo
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" parameterType="com.temper.model.TbPrelendingMortgageinfoExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from tb_prelending_mortgageinfo
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_prelending_mortgageinfo
+    where Id = #{id,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from tb_prelending_mortgageinfo
+    where Id = #{id,jdbcType=CHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.temper.model.TbPrelendingMortgageinfoExample">
+    delete from tb_prelending_mortgageinfo
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.temper.model.TbPrelendingMortgageinfo">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.String">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into tb_prelending_mortgageinfo (ApplicationId, MortgageDate, TransferDate, 
+      CarNumber, HisLicenseNumber, CollateralName, 
+      OwnerName, Relationship, MajorClass, 
+      MajorName, MediumClass, MediumName, 
+      SmallClass, SmallName, CollateralPrice, 
+      CollateralAddress, RegistrationDate, HandleDate, 
+      MaxMortgageRate, MortgageStartDate, MortgageEndDate, 
+      MortgageContractNumber, CreatedAt, CreatedById, 
+      UpdatedAt, UpdatedById, Deleted, 
+      DeletedAt, DeletedById, JsonString
+      )
+    values (#{applicationid,jdbcType=CHAR}, #{mortgagedate,jdbcType=DATE}, #{transferdate,jdbcType=DATE}, 
+      #{carnumber,jdbcType=VARCHAR}, #{hislicensenumber,jdbcType=VARCHAR}, #{collateralname,jdbcType=VARCHAR}, 
+      #{ownername,jdbcType=VARCHAR}, #{relationship,jdbcType=SMALLINT}, #{majorclass,jdbcType=VARCHAR}, 
+      #{majorname,jdbcType=VARCHAR}, #{mediumclass,jdbcType=VARCHAR}, #{mediumname,jdbcType=VARCHAR}, 
+      #{smallclass,jdbcType=VARCHAR}, #{smallname,jdbcType=VARCHAR}, #{collateralprice,jdbcType=DECIMAL}, 
+      #{collateraladdress,jdbcType=VARCHAR}, #{registrationdate,jdbcType=DATE}, #{handledate,jdbcType=DATE}, 
+      #{maxmortgagerate,jdbcType=DECIMAL}, #{mortgagestartdate,jdbcType=DATE}, #{mortgageenddate,jdbcType=DATE}, 
+      #{mortgagecontractnumber,jdbcType=VARCHAR}, #{createdat,jdbcType=TIMESTAMP}, #{createdbyid,jdbcType=CHAR}, 
+      #{updatedat,jdbcType=TIMESTAMP}, #{updatedbyid,jdbcType=CHAR}, #{deleted,jdbcType=BIT}, 
+      #{deletedat,jdbcType=TIMESTAMP}, #{deletedbyid,jdbcType=CHAR}, #{jsonstring,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.temper.model.TbPrelendingMortgageinfo">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.String">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into tb_prelending_mortgageinfo
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="applicationid != null">
+        ApplicationId,
+      </if>
+      <if test="mortgagedate != null">
+        MortgageDate,
+      </if>
+      <if test="transferdate != null">
+        TransferDate,
+      </if>
+      <if test="carnumber != null">
+        CarNumber,
+      </if>
+      <if test="hislicensenumber != null">
+        HisLicenseNumber,
+      </if>
+      <if test="collateralname != null">
+        CollateralName,
+      </if>
+      <if test="ownername != null">
+        OwnerName,
+      </if>
+      <if test="relationship != null">
+        Relationship,
+      </if>
+      <if test="majorclass != null">
+        MajorClass,
+      </if>
+      <if test="majorname != null">
+        MajorName,
+      </if>
+      <if test="mediumclass != null">
+        MediumClass,
+      </if>
+      <if test="mediumname != null">
+        MediumName,
+      </if>
+      <if test="smallclass != null">
+        SmallClass,
+      </if>
+      <if test="smallname != null">
+        SmallName,
+      </if>
+      <if test="collateralprice != null">
+        CollateralPrice,
+      </if>
+      <if test="collateraladdress != null">
+        CollateralAddress,
+      </if>
+      <if test="registrationdate != null">
+        RegistrationDate,
+      </if>
+      <if test="handledate != null">
+        HandleDate,
+      </if>
+      <if test="maxmortgagerate != null">
+        MaxMortgageRate,
+      </if>
+      <if test="mortgagestartdate != null">
+        MortgageStartDate,
+      </if>
+      <if test="mortgageenddate != null">
+        MortgageEndDate,
+      </if>
+      <if test="mortgagecontractnumber != null">
+        MortgageContractNumber,
+      </if>
+      <if test="createdat != null">
+        CreatedAt,
+      </if>
+      <if test="createdbyid != null">
+        CreatedById,
+      </if>
+      <if test="updatedat != null">
+        UpdatedAt,
+      </if>
+      <if test="updatedbyid != null">
+        UpdatedById,
+      </if>
+      <if test="deleted != null">
+        Deleted,
+      </if>
+      <if test="deletedat != null">
+        DeletedAt,
+      </if>
+      <if test="deletedbyid != null">
+        DeletedById,
+      </if>
+      <if test="jsonstring != null">
+        JsonString,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="applicationid != null">
+        #{applicationid,jdbcType=CHAR},
+      </if>
+      <if test="mortgagedate != null">
+        #{mortgagedate,jdbcType=DATE},
+      </if>
+      <if test="transferdate != null">
+        #{transferdate,jdbcType=DATE},
+      </if>
+      <if test="carnumber != null">
+        #{carnumber,jdbcType=VARCHAR},
+      </if>
+      <if test="hislicensenumber != null">
+        #{hislicensenumber,jdbcType=VARCHAR},
+      </if>
+      <if test="collateralname != null">
+        #{collateralname,jdbcType=VARCHAR},
+      </if>
+      <if test="ownername != null">
+        #{ownername,jdbcType=VARCHAR},
+      </if>
+      <if test="relationship != null">
+        #{relationship,jdbcType=SMALLINT},
+      </if>
+      <if test="majorclass != null">
+        #{majorclass,jdbcType=VARCHAR},
+      </if>
+      <if test="majorname != null">
+        #{majorname,jdbcType=VARCHAR},
+      </if>
+      <if test="mediumclass != null">
+        #{mediumclass,jdbcType=VARCHAR},
+      </if>
+      <if test="mediumname != null">
+        #{mediumname,jdbcType=VARCHAR},
+      </if>
+      <if test="smallclass != null">
+        #{smallclass,jdbcType=VARCHAR},
+      </if>
+      <if test="smallname != null">
+        #{smallname,jdbcType=VARCHAR},
+      </if>
+      <if test="collateralprice != null">
+        #{collateralprice,jdbcType=DECIMAL},
+      </if>
+      <if test="collateraladdress != null">
+        #{collateraladdress,jdbcType=VARCHAR},
+      </if>
+      <if test="registrationdate != null">
+        #{registrationdate,jdbcType=DATE},
+      </if>
+      <if test="handledate != null">
+        #{handledate,jdbcType=DATE},
+      </if>
+      <if test="maxmortgagerate != null">
+        #{maxmortgagerate,jdbcType=DECIMAL},
+      </if>
+      <if test="mortgagestartdate != null">
+        #{mortgagestartdate,jdbcType=DATE},
+      </if>
+      <if test="mortgageenddate != null">
+        #{mortgageenddate,jdbcType=DATE},
+      </if>
+      <if test="mortgagecontractnumber != null">
+        #{mortgagecontractnumber,jdbcType=VARCHAR},
+      </if>
+      <if test="createdat != null">
+        #{createdat,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createdbyid != null">
+        #{createdbyid,jdbcType=CHAR},
+      </if>
+      <if test="updatedat != null">
+        #{updatedat,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedbyid != null">
+        #{updatedbyid,jdbcType=CHAR},
+      </if>
+      <if test="deleted != null">
+        #{deleted,jdbcType=BIT},
+      </if>
+      <if test="deletedat != null">
+        #{deletedat,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deletedbyid != null">
+        #{deletedbyid,jdbcType=CHAR},
+      </if>
+      <if test="jsonstring != null">
+        #{jsonstring,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.temper.model.TbPrelendingMortgageinfoExample" resultType="java.lang.Integer">
+    select count(*) from tb_prelending_mortgageinfo
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update tb_prelending_mortgageinfo
+    <set>
+      <if test="record.id != null">
+        Id = #{record.id,jdbcType=CHAR},
+      </if>
+      <if test="record.applicationid != null">
+        ApplicationId = #{record.applicationid,jdbcType=CHAR},
+      </if>
+      <if test="record.mortgagedate != null">
+        MortgageDate = #{record.mortgagedate,jdbcType=DATE},
+      </if>
+      <if test="record.transferdate != null">
+        TransferDate = #{record.transferdate,jdbcType=DATE},
+      </if>
+      <if test="record.carnumber != null">
+        CarNumber = #{record.carnumber,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hislicensenumber != null">
+        HisLicenseNumber = #{record.hislicensenumber,jdbcType=VARCHAR},
+      </if>
+      <if test="record.collateralname != null">
+        CollateralName = #{record.collateralname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ownername != null">
+        OwnerName = #{record.ownername,jdbcType=VARCHAR},
+      </if>
+      <if test="record.relationship != null">
+        Relationship = #{record.relationship,jdbcType=SMALLINT},
+      </if>
+      <if test="record.majorclass != null">
+        MajorClass = #{record.majorclass,jdbcType=VARCHAR},
+      </if>
+      <if test="record.majorname != null">
+        MajorName = #{record.majorname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mediumclass != null">
+        MediumClass = #{record.mediumclass,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mediumname != null">
+        MediumName = #{record.mediumname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.smallclass != null">
+        SmallClass = #{record.smallclass,jdbcType=VARCHAR},
+      </if>
+      <if test="record.smallname != null">
+        SmallName = #{record.smallname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.collateralprice != null">
+        CollateralPrice = #{record.collateralprice,jdbcType=DECIMAL},
+      </if>
+      <if test="record.collateraladdress != null">
+        CollateralAddress = #{record.collateraladdress,jdbcType=VARCHAR},
+      </if>
+      <if test="record.registrationdate != null">
+        RegistrationDate = #{record.registrationdate,jdbcType=DATE},
+      </if>
+      <if test="record.handledate != null">
+        HandleDate = #{record.handledate,jdbcType=DATE},
+      </if>
+      <if test="record.maxmortgagerate != null">
+        MaxMortgageRate = #{record.maxmortgagerate,jdbcType=DECIMAL},
+      </if>
+      <if test="record.mortgagestartdate != null">
+        MortgageStartDate = #{record.mortgagestartdate,jdbcType=DATE},
+      </if>
+      <if test="record.mortgageenddate != null">
+        MortgageEndDate = #{record.mortgageenddate,jdbcType=DATE},
+      </if>
+      <if test="record.mortgagecontractnumber != null">
+        MortgageContractNumber = #{record.mortgagecontractnumber,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createdat != null">
+        CreatedAt = #{record.createdat,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.createdbyid != null">
+        CreatedById = #{record.createdbyid,jdbcType=CHAR},
+      </if>
+      <if test="record.updatedat != null">
+        UpdatedAt = #{record.updatedat,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updatedbyid != null">
+        UpdatedById = #{record.updatedbyid,jdbcType=CHAR},
+      </if>
+      <if test="record.deleted != null">
+        Deleted = #{record.deleted,jdbcType=BIT},
+      </if>
+      <if test="record.deletedat != null">
+        DeletedAt = #{record.deletedat,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.deletedbyid != null">
+        DeletedById = #{record.deletedbyid,jdbcType=CHAR},
+      </if>
+      <if test="record.jsonstring != null">
+        JsonString = #{record.jsonstring,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map">
+    update tb_prelending_mortgageinfo
+    set Id = #{record.id,jdbcType=CHAR},
+      ApplicationId = #{record.applicationid,jdbcType=CHAR},
+      MortgageDate = #{record.mortgagedate,jdbcType=DATE},
+      TransferDate = #{record.transferdate,jdbcType=DATE},
+      CarNumber = #{record.carnumber,jdbcType=VARCHAR},
+      HisLicenseNumber = #{record.hislicensenumber,jdbcType=VARCHAR},
+      CollateralName = #{record.collateralname,jdbcType=VARCHAR},
+      OwnerName = #{record.ownername,jdbcType=VARCHAR},
+      Relationship = #{record.relationship,jdbcType=SMALLINT},
+      MajorClass = #{record.majorclass,jdbcType=VARCHAR},
+      MajorName = #{record.majorname,jdbcType=VARCHAR},
+      MediumClass = #{record.mediumclass,jdbcType=VARCHAR},
+      MediumName = #{record.mediumname,jdbcType=VARCHAR},
+      SmallClass = #{record.smallclass,jdbcType=VARCHAR},
+      SmallName = #{record.smallname,jdbcType=VARCHAR},
+      CollateralPrice = #{record.collateralprice,jdbcType=DECIMAL},
+      CollateralAddress = #{record.collateraladdress,jdbcType=VARCHAR},
+      RegistrationDate = #{record.registrationdate,jdbcType=DATE},
+      HandleDate = #{record.handledate,jdbcType=DATE},
+      MaxMortgageRate = #{record.maxmortgagerate,jdbcType=DECIMAL},
+      MortgageStartDate = #{record.mortgagestartdate,jdbcType=DATE},
+      MortgageEndDate = #{record.mortgageenddate,jdbcType=DATE},
+      MortgageContractNumber = #{record.mortgagecontractnumber,jdbcType=VARCHAR},
+      CreatedAt = #{record.createdat,jdbcType=TIMESTAMP},
+      CreatedById = #{record.createdbyid,jdbcType=CHAR},
+      UpdatedAt = #{record.updatedat,jdbcType=TIMESTAMP},
+      UpdatedById = #{record.updatedbyid,jdbcType=CHAR},
+      Deleted = #{record.deleted,jdbcType=BIT},
+      DeletedAt = #{record.deletedat,jdbcType=TIMESTAMP},
+      DeletedById = #{record.deletedbyid,jdbcType=CHAR},
+      JsonString = #{record.jsonstring,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update tb_prelending_mortgageinfo
+    set Id = #{record.id,jdbcType=CHAR},
+      ApplicationId = #{record.applicationid,jdbcType=CHAR},
+      MortgageDate = #{record.mortgagedate,jdbcType=DATE},
+      TransferDate = #{record.transferdate,jdbcType=DATE},
+      CarNumber = #{record.carnumber,jdbcType=VARCHAR},
+      HisLicenseNumber = #{record.hislicensenumber,jdbcType=VARCHAR},
+      CollateralName = #{record.collateralname,jdbcType=VARCHAR},
+      OwnerName = #{record.ownername,jdbcType=VARCHAR},
+      Relationship = #{record.relationship,jdbcType=SMALLINT},
+      MajorClass = #{record.majorclass,jdbcType=VARCHAR},
+      MajorName = #{record.majorname,jdbcType=VARCHAR},
+      MediumClass = #{record.mediumclass,jdbcType=VARCHAR},
+      MediumName = #{record.mediumname,jdbcType=VARCHAR},
+      SmallClass = #{record.smallclass,jdbcType=VARCHAR},
+      SmallName = #{record.smallname,jdbcType=VARCHAR},
+      CollateralPrice = #{record.collateralprice,jdbcType=DECIMAL},
+      CollateralAddress = #{record.collateraladdress,jdbcType=VARCHAR},
+      RegistrationDate = #{record.registrationdate,jdbcType=DATE},
+      HandleDate = #{record.handledate,jdbcType=DATE},
+      MaxMortgageRate = #{record.maxmortgagerate,jdbcType=DECIMAL},
+      MortgageStartDate = #{record.mortgagestartdate,jdbcType=DATE},
+      MortgageEndDate = #{record.mortgageenddate,jdbcType=DATE},
+      MortgageContractNumber = #{record.mortgagecontractnumber,jdbcType=VARCHAR},
+      CreatedAt = #{record.createdat,jdbcType=TIMESTAMP},
+      CreatedById = #{record.createdbyid,jdbcType=CHAR},
+      UpdatedAt = #{record.updatedat,jdbcType=TIMESTAMP},
+      UpdatedById = #{record.updatedbyid,jdbcType=CHAR},
+      Deleted = #{record.deleted,jdbcType=BIT},
+      DeletedAt = #{record.deletedat,jdbcType=TIMESTAMP},
+      DeletedById = #{record.deletedbyid,jdbcType=CHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.temper.model.TbPrelendingMortgageinfo">
+    update tb_prelending_mortgageinfo
+    <set>
+      <if test="applicationid != null">
+        ApplicationId = #{applicationid,jdbcType=CHAR},
+      </if>
+      <if test="mortgagedate != null">
+        MortgageDate = #{mortgagedate,jdbcType=DATE},
+      </if>
+      <if test="transferdate != null">
+        TransferDate = #{transferdate,jdbcType=DATE},
+      </if>
+      <if test="carnumber != null">
+        CarNumber = #{carnumber,jdbcType=VARCHAR},
+      </if>
+      <if test="hislicensenumber != null">
+        HisLicenseNumber = #{hislicensenumber,jdbcType=VARCHAR},
+      </if>
+      <if test="collateralname != null">
+        CollateralName = #{collateralname,jdbcType=VARCHAR},
+      </if>
+      <if test="ownername != null">
+        OwnerName = #{ownername,jdbcType=VARCHAR},
+      </if>
+      <if test="relationship != null">
+        Relationship = #{relationship,jdbcType=SMALLINT},
+      </if>
+      <if test="majorclass != null">
+        MajorClass = #{majorclass,jdbcType=VARCHAR},
+      </if>
+      <if test="majorname != null">
+        MajorName = #{majorname,jdbcType=VARCHAR},
+      </if>
+      <if test="mediumclass != null">
+        MediumClass = #{mediumclass,jdbcType=VARCHAR},
+      </if>
+      <if test="mediumname != null">
+        MediumName = #{mediumname,jdbcType=VARCHAR},
+      </if>
+      <if test="smallclass != null">
+        SmallClass = #{smallclass,jdbcType=VARCHAR},
+      </if>
+      <if test="smallname != null">
+        SmallName = #{smallname,jdbcType=VARCHAR},
+      </if>
+      <if test="collateralprice != null">
+        CollateralPrice = #{collateralprice,jdbcType=DECIMAL},
+      </if>
+      <if test="collateraladdress != null">
+        CollateralAddress = #{collateraladdress,jdbcType=VARCHAR},
+      </if>
+      <if test="registrationdate != null">
+        RegistrationDate = #{registrationdate,jdbcType=DATE},
+      </if>
+      <if test="handledate != null">
+        HandleDate = #{handledate,jdbcType=DATE},
+      </if>
+      <if test="maxmortgagerate != null">
+        MaxMortgageRate = #{maxmortgagerate,jdbcType=DECIMAL},
+      </if>
+      <if test="mortgagestartdate != null">
+        MortgageStartDate = #{mortgagestartdate,jdbcType=DATE},
+      </if>
+      <if test="mortgageenddate != null">
+        MortgageEndDate = #{mortgageenddate,jdbcType=DATE},
+      </if>
+      <if test="mortgagecontractnumber != null">
+        MortgageContractNumber = #{mortgagecontractnumber,jdbcType=VARCHAR},
+      </if>
+      <if test="createdat != null">
+        CreatedAt = #{createdat,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createdbyid != null">
+        CreatedById = #{createdbyid,jdbcType=CHAR},
+      </if>
+      <if test="updatedat != null">
+        UpdatedAt = #{updatedat,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedbyid != null">
+        UpdatedById = #{updatedbyid,jdbcType=CHAR},
+      </if>
+      <if test="deleted != null">
+        Deleted = #{deleted,jdbcType=BIT},
+      </if>
+      <if test="deletedat != null">
+        DeletedAt = #{deletedat,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deletedbyid != null">
+        DeletedById = #{deletedbyid,jdbcType=CHAR},
+      </if>
+      <if test="jsonstring != null">
+        JsonString = #{jsonstring,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where Id = #{id,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.temper.model.TbPrelendingMortgageinfo">
+    update tb_prelending_mortgageinfo
+    set ApplicationId = #{applicationid,jdbcType=CHAR},
+      MortgageDate = #{mortgagedate,jdbcType=DATE},
+      TransferDate = #{transferdate,jdbcType=DATE},
+      CarNumber = #{carnumber,jdbcType=VARCHAR},
+      HisLicenseNumber = #{hislicensenumber,jdbcType=VARCHAR},
+      CollateralName = #{collateralname,jdbcType=VARCHAR},
+      OwnerName = #{ownername,jdbcType=VARCHAR},
+      Relationship = #{relationship,jdbcType=SMALLINT},
+      MajorClass = #{majorclass,jdbcType=VARCHAR},
+      MajorName = #{majorname,jdbcType=VARCHAR},
+      MediumClass = #{mediumclass,jdbcType=VARCHAR},
+      MediumName = #{mediumname,jdbcType=VARCHAR},
+      SmallClass = #{smallclass,jdbcType=VARCHAR},
+      SmallName = #{smallname,jdbcType=VARCHAR},
+      CollateralPrice = #{collateralprice,jdbcType=DECIMAL},
+      CollateralAddress = #{collateraladdress,jdbcType=VARCHAR},
+      RegistrationDate = #{registrationdate,jdbcType=DATE},
+      HandleDate = #{handledate,jdbcType=DATE},
+      MaxMortgageRate = #{maxmortgagerate,jdbcType=DECIMAL},
+      MortgageStartDate = #{mortgagestartdate,jdbcType=DATE},
+      MortgageEndDate = #{mortgageenddate,jdbcType=DATE},
+      MortgageContractNumber = #{mortgagecontractnumber,jdbcType=VARCHAR},
+      CreatedAt = #{createdat,jdbcType=TIMESTAMP},
+      CreatedById = #{createdbyid,jdbcType=CHAR},
+      UpdatedAt = #{updatedat,jdbcType=TIMESTAMP},
+      UpdatedById = #{updatedbyid,jdbcType=CHAR},
+      Deleted = #{deleted,jdbcType=BIT},
+      DeletedAt = #{deletedat,jdbcType=TIMESTAMP},
+      DeletedById = #{deletedbyid,jdbcType=CHAR},
+      JsonString = #{jsonstring,jdbcType=LONGVARCHAR}
+    where Id = #{id,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.temper.model.TbPrelendingMortgageinfo">
+    update tb_prelending_mortgageinfo
+    set ApplicationId = #{applicationid,jdbcType=CHAR},
+      MortgageDate = #{mortgagedate,jdbcType=DATE},
+      TransferDate = #{transferdate,jdbcType=DATE},
+      CarNumber = #{carnumber,jdbcType=VARCHAR},
+      HisLicenseNumber = #{hislicensenumber,jdbcType=VARCHAR},
+      CollateralName = #{collateralname,jdbcType=VARCHAR},
+      OwnerName = #{ownername,jdbcType=VARCHAR},
+      Relationship = #{relationship,jdbcType=SMALLINT},
+      MajorClass = #{majorclass,jdbcType=VARCHAR},
+      MajorName = #{majorname,jdbcType=VARCHAR},
+      MediumClass = #{mediumclass,jdbcType=VARCHAR},
+      MediumName = #{mediumname,jdbcType=VARCHAR},
+      SmallClass = #{smallclass,jdbcType=VARCHAR},
+      SmallName = #{smallname,jdbcType=VARCHAR},
+      CollateralPrice = #{collateralprice,jdbcType=DECIMAL},
+      CollateralAddress = #{collateraladdress,jdbcType=VARCHAR},
+      RegistrationDate = #{registrationdate,jdbcType=DATE},
+      HandleDate = #{handledate,jdbcType=DATE},
+      MaxMortgageRate = #{maxmortgagerate,jdbcType=DECIMAL},
+      MortgageStartDate = #{mortgagestartdate,jdbcType=DATE},
+      MortgageEndDate = #{mortgageenddate,jdbcType=DATE},
+      MortgageContractNumber = #{mortgagecontractnumber,jdbcType=VARCHAR},
+      CreatedAt = #{createdat,jdbcType=TIMESTAMP},
+      CreatedById = #{createdbyid,jdbcType=CHAR},
+      UpdatedAt = #{updatedat,jdbcType=TIMESTAMP},
+      UpdatedById = #{updatedbyid,jdbcType=CHAR},
+      Deleted = #{deleted,jdbcType=BIT},
+      DeletedAt = #{deletedat,jdbcType=TIMESTAMP},
+      DeletedById = #{deletedbyid,jdbcType=CHAR}
+    where Id = #{id,jdbcType=CHAR}
+  </update>
+</mapper>

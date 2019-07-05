@@ -3,7 +3,7 @@ spring:
     active: dev #默认为开发环境
 
 mybatis-plus:
-  mapper-locations: classpath:mapper/*.xml,classpath*:com/**/mapper/*.xml
+  mapper-locations: classpath*:mapper/*.xml,classpath*:com/**/mapper/*.xml
 
 jwt:
   tokenHeader: Authorization #JWT存储的请求头

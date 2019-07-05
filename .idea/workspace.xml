@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9c7c3c1-d48a-4333-b3a3-3f270132d670" name="Default Changelist" comment="" />
+    <list default="true" id="e9c7c3c1-d48a-4333-b3a3-3f270132d670" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/good/MyBatisPlusGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/demo/DemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/demo/impl/DemoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/good-mybatis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/mapper/demo/PmsBrandMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/model/PmsBrand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/model/UmsAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/model/UmsPermission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-mybatis/src/main/resources/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/good-mybatis/src/main/resources/generator.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-mybatis/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/good-mybatis/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-mybatis/target/classes/com/temper/mapper/demo/PmsBrandMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/good-mybatis/target/classes/com/temper/mapper/demo/PmsBrandMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-mybatis/target/classes/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/good-mybatis/target/classes/generator.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-mybatis/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/good-mybatis/target/classes/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/SpringRunApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/SpringRunApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/bo/AdminUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/bo/AdminUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/demo/aaa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/demo/impl/aaaimpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/good-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/good-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-service/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/good-service/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/good-service/target/classes/com/temper/good/SpringRunApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/good-service/target/classes/com/temper/good/SpringRunApplication.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/core-util/target/" />
@@ -32,6 +56,11 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="goottemper" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="goottemper" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
     </expand>
     <select />
   </component>
@@ -41,47 +70,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/aop/TransactionAdviceConfig.java">
+        <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/good/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-              <folding>
-                <element signature="method#txAdvice#0;class#TransactionAdviceConfig#0" expanded="true" />
-                <element signature="method#txAdviceAdvisor#0;class#TransactionAdviceConfig#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/SpringRunApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="365">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#main#0;class#SpringRunApplication#0" expanded="true" />
-                <element signature="method#configure#0;class#SpringRunApplication#0" expanded="true" />
-                <element signature="method#run#0;class#SpringRunApplication#0" expanded="true" />
+                <element signature="e#543#551#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/good-service/src/test/java/com/temper/good/GoodServiceApplicationTests.java">
+        <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/good/CommentGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/config/SecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="88" column="2" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="2" />
+            <state relative-caret-position="280">
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#addConfigurationProperties#0;class#CommentGenerator#0" expanded="true" />
+                <element signature="method#addFieldComment#0;class#CommentGenerator#0" expanded="true" />
+                <element signature="method#addFieldJavaDoc#0;class#CommentGenerator#0" expanded="true" />
+                <element signature="method#addJavaFileComment#0;class#CommentGenerator#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,11 +101,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/BindingResultAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="212">
+              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
               <folding>
                 <element signature="method#BindingResult#0;class#BindingResultAspect#0" expanded="true" />
-                <element signature="method#doAround#0;class#BindingResultAspect#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,10 +113,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/RestAuthenticationEntryPoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+            <state relative-caret-position="424">
+              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#commence#0;class#RestAuthenticationEntryPoint#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,9 +126,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/RestfulAccessDeniedHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+            <state relative-caret-position="272">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#handle#0;class#RestfulAccessDeniedHandler#0" expanded="true" />
               </folding>
             </state>
@@ -124,10 +137,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/WebLogAspect.java">
+        <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/resources/generatorConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+            <state relative-caret-position="442">
+              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/good/MyBatisPlusGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="91" column="34" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,15 +157,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/good-mybatis/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/bo/AdminUserDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-              <folding>
-                <element signature="method#AdminUserDetails#0;class#AdminUserDetails#0" expanded="true" />
-                <element signature="method#getAuthorities#0;class#AdminUserDetails#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="25" column="20" selection-end-line="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/bo/WebLog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -157,6 +194,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -167,38 +207,44 @@
         <option value="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/good/Generator.java" />
         <option value="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/model/PmsBrand.java" />
         <option value="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/model/PmsBrandExample.java" />
-        <option value="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/mapper/demo/PmsBrandMapper.java" />
         <option value="$PROJECT_DIR$/good-mybatis/src/test/java/com/temper/good/GoodMybatisApplicationTests.java" />
-        <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/demo/aaa.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/good-service/src/main/resources/application-prod.yml" />
         <option value="$PROJECT_DIR$/core-util/pom.xml" />
         <option value="$PROJECT_DIR$/core-util/src/main/java/com/temper/core/utils/JwtTokenUtil.java" />
         <option value="$PROJECT_DIR$/core-util/src/main/java/com/temper/core/utils/CommonUtil.java" />
         <option value="$PROJECT_DIR$/good-service/pom.xml" />
-        <option value="$PROJECT_DIR$/good-mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/JwtAuthenticationTokenFilter.java" />
         <option value="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/model/UmsAdmin.java" />
         <option value="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/model/UmsPermission.java" />
-        <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/bo/AdminUserDetails.java" />
         <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/util/JwtTokenUtil.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/43ca8742-a8a7-4f4f-a0ec-8d549b6d2834/console.sql" />
-        <option value="$PROJECT_DIR$/good-service/src/main/resources/application-dev.yml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f68c7c7b-924a-4082-a431-e837ae4ae05c/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3a11aff2-e16b-4c35-9834-d8e8a5c399ed/console.sql" />
         <option value="$PROJECT_DIR$/good-service/src/main/resources/logback-spring.xml" />
-        <option value="$PROJECT_DIR$/good-service/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/good-mybatis/src/main/resources/generator.properties" />
-        <option value="$PROJECT_DIR$/good-mybatis/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/config/MyBatisConfig.java" />
         <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/aop/TransactionAdviceConfig.java" />
-        <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/SpringRunApplication.java" />
         <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/BindingResultAspect.java" />
         <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/RestAuthenticationEntryPoint.java" />
         <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/RestfulAccessDeniedHandler.java" />
         <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/bo/WebLog.java" />
         <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/WebLogAspect.java" />
+        <option value="$PROJECT_DIR$/good-service/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/SpringRunApplication.java" />
+        <option value="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/mapper/demo/PmsBrandMapper.java" />
+        <option value="$PROJECT_DIR$/good-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/controller/DemoController.java" />
+        <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/demo/aaa.java" />
+        <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/demo/impl/aaaimpl.java" />
+        <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/demo/DemoService.java" />
+        <option value="$PROJECT_DIR$/good-mybatis/src/main/resources/generator.properties" />
+        <option value="$PROJECT_DIR$/good-mybatis/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/mapper/TreeMapper.java" />
+        <option value="$PROJECT_DIR$/good-service/src/main/java/com/temper/good/bo/AdminUserDetails.java" />
+        <option value="$PROJECT_DIR$/good-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/good/ttt.java" />
+        <option value="$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/good/MyBatisPlusGenerator.java" />
       </list>
     </option>
   </component>
@@ -235,114 +281,106 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
-              <item name="core-util" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
-              <item name="core-util" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
-              <item name="core-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
-              <item name="core-util" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
-              <item name="core-util" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
-              <item name="core-util" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="temper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
-              <item name="core-util" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="temper" type="462c0819:PsiDirectoryNode" />
+              <item name="good" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="temper" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
-              <item name="good-mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
-              <item name="good-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
-              <item name="good-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
               <item name="good-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
               <item name="good-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
               <item name="good-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
               <item name="good-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
               <item name="good-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -350,8 +388,8 @@
               <item name="good" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
               <item name="good-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -360,8 +398,8 @@
               <item name="bo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
               <item name="good-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -370,38 +408,27 @@
               <item name="component" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
+              <item name="good-temper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="good-temper" type="462c0819:PsiDirectoryNode" />
               <item name="good-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
-              <item name="good-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodtemper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodtemper" type="462c0819:PsiDirectoryNode" />
-              <item name="good-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="good" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -443,7 +470,33 @@
     </option>
     <option name="contentProportion" value="0.09470934" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MyBatisPlusGenerator">
+    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.temper.good.Generator" />
+      <module name="good-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.temper.good.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBatisPlusGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.temper.good.MyBatisPlusGenerator" />
+      <module name="good-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.temper.good.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringRun" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="good-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.temper.good.SpringRunApplication" />
@@ -452,6 +505,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyBatisPlusGenerator" />
+        <item itemvalue="Application.Generator" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -465,11 +524,12 @@
       <updated>1562300366527</updated>
       <workItem from="1562300367703" duration="4020000" />
       <workItem from="1562304408429" duration="5335000" />
+      <workItem from="1562320006642" duration="2710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9355000" />
+    <option name="totallyTimeSpent" value="12065000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -482,9 +542,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1932" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="DB Browser" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26612905" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3360215" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -493,12 +553,10 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Learn" order="7" />
       <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" sideWeight="0.49946237" weight="0.32996634" />
-      <window_info anchor="bottom" id="Database Console" sideWeight="0.49892473" weight="0.32996634" />
-      <window_info anchor="bottom" id="DB Execution Console" />
+      <window_info id="DB Browser" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32996634" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946237" weight="0.32996634" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -506,12 +564,56 @@
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946237" weight="0.32996634" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946237" weight="0.32996634" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.15752688" side_tool="true" visible="true" weight="0.07631874" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4983871" weight="0.32996634" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053763" side_tool="true" weight="0.32996634" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49784946" weight="0.32996634" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49946237" weight="0.32996634" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.8424731" visible="true" weight="0.07631874" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.8413978" weight="0.54657686" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="16" sideWeight="0.49946237" weight="0.32996634" />
+      <window_info anchor="bottom" id="DB Execution Console" order="17" />
+      <window_info anchor="bottom" id="Database Console" order="18" sideWeight="0.49892473" weight="0.32996634" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.26774195" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.14193548" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3295699" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3360215" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info id="DB Browser" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946237" visible="true" weight="0.32996634" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946237" weight="0.32996634" />
+      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946237" weight="0.32996634" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946237" weight="0.32996634" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053763" side_tool="true" visible="true" weight="0.32996634" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49784946" weight="0.32996634" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49946237" weight="0.32996634" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.8413978" weight="0.54657686" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="16" sideWeight="0.49946237" weight="0.32996634" />
+      <window_info anchor="bottom" id="DB Execution Console" order="17" />
+      <window_info anchor="bottom" id="Database Console" order="18" sideWeight="0.49892473" weight="0.32996634" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -522,101 +624,12 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.3295699" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/good-mybatis/src/test/java/com/temper/good/GoodMybatisApplicationTests.java" />
-    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/user/impl/aaa.java" />
-    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/demo/aaa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/demo/impl/aaaimpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/user/bsd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/mapper/demo/PmsBrandMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/model/PmsBrand.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/good-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/good-service/src/main/resources/application-prod.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-util/src/main/java/com/temper/core/utils/JwtTokenUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="113" column="38" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#generateToken#0;class#JwtTokenUtil#0" expanded="true" />
-            <element signature="method#getClaimsFromToken#0;class#JwtTokenUtil#0" expanded="true" />
-            <element signature="method#getUserNameFromToken#0;class#JwtTokenUtil#0" expanded="true" />
-            <element signature="method#validateToken#0;class#JwtTokenUtil#0" expanded="true" />
-            <element signature="method#getExpiredDateFromToken#0;class#JwtTokenUtil#0" expanded="true" />
-            <element signature="method#generateToken#1;class#JwtTokenUtil#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-util/src/main/java/com/temper/core/utils/CommonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-          <folding>
-            <element signature="method#isObjectNull#0;class#CommonUtil#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1169#1170#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/good-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="60" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-util/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -650,16 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/JwtAuthenticationTokenFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="47" column="32" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,42 +767,6 @@
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/good-service/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/good-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/good-mybatis/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="38" column="50" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/resources/generator.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/config/MyBatisConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -817,6 +784,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core-util/src/test/java/com/temper/coreutil/CoreUtilApplicationTests.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.5.7/hutool-all-4.5.7-sources.jar!/cn/hutool/core/util/StrUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2890">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/aop/TransactionAdviceConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -824,29 +799,6 @@
           <folding>
             <element signature="method#txAdvice#0;class#TransactionAdviceConfig#0" expanded="true" />
             <element signature="method#txAdviceAdvisor#0;class#TransactionAdviceConfig#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-util/src/test/java/com/temper/coreutil/CoreUtilApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/SpringRunApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#SpringRunApplication#0" expanded="true" />
-            <element signature="method#configure#0;class#SpringRunApplication#0" expanded="true" />
-            <element signature="method#run#0;class#SpringRunApplication#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -860,26 +812,191 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="287">
           <caret line="88" column="2" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/SpringRunApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#SpringRunApplication#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-service/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/controller/DemoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/demo/impl/DemoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/demo/DemoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/resources/generator.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/good/CommentGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addConfigurationProperties#0;class#CommentGenerator#0" expanded="true" />
+            <element signature="method#addFieldComment#0;class#CommentGenerator#0" expanded="true" />
+            <element signature="method#addFieldJavaDoc#0;class#CommentGenerator#0" expanded="true" />
+            <element signature="method#addJavaFileComment#0;class#CommentGenerator#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/model/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/model/TreeExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/model/PmsBrand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/model/ClassExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/mapper/TreeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/mapper/demo/PmsBrandMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/good/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#543#551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/bo/AdminUserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="20" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/bo/WebLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/BindingResultAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="212">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
           <folding>
             <element signature="method#BindingResult#0;class#BindingResultAspect#0" expanded="true" />
-            <element signature="method#doAround#0;class#BindingResultAspect#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/RestAuthenticationEntryPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+        <state relative-caret-position="424">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#commence#0;class#RestAuthenticationEntryPoint#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/WebLogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/JwtAuthenticationTokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="42" column="59" lean-forward="true" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -888,45 +1005,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/RestfulAccessDeniedHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        <state relative-caret-position="272">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#handle#0;class#RestfulAccessDeniedHandler#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/bo/WebLog.java">
+    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="442">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.5.7/hutool-all-4.5.7-sources.jar!/cn/hutool/core/util/StrUtil.java">
+    <entry file="file://$PROJECT_DIR$/good-mybatis/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2890">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        <state relative-caret-position="377">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/component/WebLogAspect.java">
+    <entry file="file://$PROJECT_DIR$/good-mybatis/src/main/java/com/temper/good/MyBatisPlusGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+        <state relative-caret-position="578">
+          <caret line="91" column="34" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/good-service/src/main/java/com/temper/good/bo/AdminUserDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-          <folding>
-            <element signature="method#AdminUserDetails#0;class#AdminUserDetails#0" expanded="true" />
-            <element signature="method#getAuthorities#0;class#AdminUserDetails#0" expanded="true" />
           </folding>
         </state>
       </provider>
