@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="core-util" />
+        <module name="good-mybatis" />
+        <module name="good-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="good-api" target="1.8" />
+      <module name="good-web" target="1.8" />
+      <module name="mybatis-generate" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="core-util" options="" />
+      <module name="good-api" options="-parameters" />
+      <module name="good-mybatis" options="-parameters" />
+      <module name="good-service" options="-parameters" />
+      <module name="good-web" options="-parameters" />
+      <module name="mybatis-generate" options="-parameters" />
+    </option>
+  </component>
+</project>
